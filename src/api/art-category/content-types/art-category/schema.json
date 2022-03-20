@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "art_categories",
+  "info": {
+    "singularName": "art-category",
+    "pluralName": "art-categories",
+    "displayName": "Art Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "art_pieces": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::art-piece.art-piece",
+      "mappedBy": "art_categories"
+    },
+    "featuredArt": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::art-piece.art-piece"
+    },
+    "omit": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::art-piece.art-piece"
+    }
+  }
+}

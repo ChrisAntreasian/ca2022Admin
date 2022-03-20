@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_slugs",
+  "info": {
+    "singularName": "page-slug",
+    "pluralName": "page-slugs",
+    "displayName": "Page Details",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "art_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::art-category.art-category"
+    },
+    "poems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::poem.poem"
+    },
+    "Featured": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::art-piece.art-piece"
+    }
+  }
+}
