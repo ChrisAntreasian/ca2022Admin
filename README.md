@@ -1,3 +1,8 @@
-# Strapi application
+# Christopher Antreasians ART SITE
 
-A quick description of your strapi application
+Built this silly thing with my blood and tears. 
+## Strapi
+
+Wordpress is dead to me.
+
+Yay!
