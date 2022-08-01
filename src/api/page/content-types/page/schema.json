@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_details": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page-slug.page-slug"
+    },
+    "rich_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rich-link.rich-link"
+    },
+    "art_pieces": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::art-piece.art-piece"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "page-slug",
     "pluralName": "page-slugs",
-    "displayName": "Page Details",
+    "displayName": "Page Detail",
     "description": ""
   },
   "options": {
@@ -31,10 +31,21 @@
       "relation": "oneToMany",
       "target": "api::poem.poem"
     },
-    "Featured": {
+    "link": {
+      "type": "string",
+      "regex": "(https?:\\/\\/|\\/)\\w+\\.[^\\s]+$|^\\/[^\\s]*$"
+    },
+    "art_piece": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::art-piece.art-piece"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
