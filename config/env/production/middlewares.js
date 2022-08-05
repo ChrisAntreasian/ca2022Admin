@@ -1,4 +1,6 @@
-module.exports = [
+const { AWS_BUCKET } = process.env;
+
+module.exports = ({ env }) => [
   'strapi::errors',
   {
     name: 'strapi::security',
@@ -12,19 +14,19 @@ module.exports = [
             'data:',
             'blob:',
             'dl.airtable.com',
-            'ca2022s3.s3.us-east-1.amazonaws.com',
+            `${env('AWS_BUCKET', AWS_BUCKET)}.s3.amazonaws.com`
           ],
           'media-src': [
             "'self'",
             'data:',
             'blob:',
             'dl.airtable.com',
-            'ca2022s3.s3.us-east-1.amazonaws.com',
+            `${env('AWS_BUCKET', AWS_BUCKET)}.s3.amazonaws.com`
           ],
           upgradeInsecureRequests: null,
         },
       },
-    },
+    }
   },  
   'strapi::cors',
   'strapi::poweredBy',
@@ -33,4 +35,5 @@ module.exports = [
   'strapi::body',
   'strapi::favicon',
   'strapi::public',
+  'strapi::session',
 ];

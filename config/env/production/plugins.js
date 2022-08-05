@@ -19,9 +19,12 @@ module.exports = ({ env }) => ({
         logger: console
       },
       actionOptions: {
-        upload: {},
-        uploadStream: {},
-        delete: {},
+        upload: {
+          ACL: null
+        },
+        uploadStream: {
+          ACL: null
+        },
       },
     },
   },
