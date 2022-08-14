@@ -29,18 +29,9 @@
         "images"
       ]
     },
-    "meta": {
-      "type": "json"
-    },
     "featured": {
       "type": "boolean",
       "default": false
-    },
-    "content_supplements": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::content-supplement.content-supplement",
-      "mappedBy": "poem"
     }
   }
 }

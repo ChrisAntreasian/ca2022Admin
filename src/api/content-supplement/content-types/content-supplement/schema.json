@@ -24,12 +24,6 @@
         "files"
       ]
     },
-    "poem": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::poem.poem",
-      "inversedBy": "content_supplements"
-    },
     "art_piece": {
       "type": "relation",
       "relation": "manyToOne",
