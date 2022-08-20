@@ -4,7 +4,7 @@
   "info": {
     "singularName": "art-piece",
     "pluralName": "art-pieces",
-    "displayName": "Art Piece",
+    "displayName": "The Quintuplapus",
     "description": ""
   },
   "options": {
@@ -30,12 +30,6 @@
       "relation": "manyToMany",
       "target": "api::art-category.art-category",
       "inversedBy": "art_pieces"
-    },
-    "content_supplements": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::content-supplement.content-supplement",
-      "mappedBy": "art_piece"
     },
     "createdDate": {
       "type": "date"
