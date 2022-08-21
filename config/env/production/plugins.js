@@ -6,7 +6,7 @@ module.exports = ({ env }) => ({
       jwtSecret: env('JWT_SECRET', JWT_SECRET)
     }
   },
-  upload: {
+  'upload': {
     config: {
       provider: 'aws-s3',
       providerOptions: {
@@ -27,5 +27,8 @@ module.exports = ({ env }) => ({
         },
       },
     },
+  },
+  'import-export-entries': {
+    enabled: true,
   },
 });
