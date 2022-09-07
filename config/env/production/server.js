@@ -1,3 +1,3 @@
 module.exports = ({ env }) => ({
-  url: env('https://ca2022admin.herokuapp.com/'),
+  url: env('wqrxwe5swqdeabc55449.cleaver.rocks'),
 });
