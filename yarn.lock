@@ -1822,11 +1822,11 @@
     sendmail "^1.6.1"
 
 "@strapi/provider-upload-aws-s3@^4.3.2":
-  version "4.3.6"
-  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.3.6.tgz#fd6c41aae3cd17c62feda29cec10ceafbaec9583"
-  integrity sha512-tWxfHHG/K+GnpjsO+vQjt2KbXePis7e+2QWBZaovIvIzar7ZoDyJWQ+favhMa/uoMJ1ivqS7Vrpe2unJT8Z1Nw==
+  version "4.3.7"
+  resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.3.7.tgz#529044b5877851efd0dfa6fc83ae3e44b6f89251"
+  integrity sha512-MGBE3cQb+M6fbvsi6d5tJUfaNltOJGrSFQmKkM69DE1goMwI+F58fD805qkOUeQRUoJj80oqRgCrzI2kGXXA0g==
   dependencies:
-    aws-sdk "2.1188.0"
+    aws-sdk "2.1208.0"
     lodash "4.17.21"
 
 "@strapi/provider-upload-local@4.3.4":
@@ -2655,10 +2655,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-sdk@2.1188.0:
-  version "2.1188.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1188.0.tgz#94b710948ef2924093a8d6fe42443a792385afa2"
-  integrity sha512-4KXwjRjbCzU1luTOeH+ded92H51I4UuHaZzx2EI+JA0II1+q48heTxFlFd7yp7jGz9UwjPb6k12Jv1W3r0JWxA==
+aws-sdk@2.1208.0:
+  version "2.1208.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1208.0.tgz#7dc8c877652d2b1ea126a3c256157c1cbd2e20e2"
+  integrity sha512-Wyq9TJyvRZMcHmcGwmOJag5/94m+Gq3BHcK2klwFvgUf1OWWJc4OYqmi90d7qJ09ydTeGGMeodNJildQdkOrYQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -4223,9 +4223,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.4.202:
-  version "1.4.242"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.242.tgz#51284820b0e6f6ce6c60d3945a3c4f9e4bd88f5f"
-  integrity sha512-nPdgMWtjjWGCtreW/2adkrB2jyHjClo9PtVhR6rW+oxa4E4Wom642Tn+5LslHP3XPL5MCpkn5/UEY60EXylNeQ==
+  version "1.4.243"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.243.tgz#9d5f1b10eafd6e434b687a88f1e7b0441dee168a"
+  integrity sha512-BgLD2gBX43OSXwlT01oYRRD5NIB4n3okTRxkzEAC6G0SZG4TTlyrWMjbOo0fajCwqwpRtMHXQNMjtRN6qpNtfw==
 
 elliptic@^6.5.3, elliptic@^6.5.4:
   version "6.5.4"
