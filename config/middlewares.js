@@ -1,8 +1,7 @@
-const { AWS_BUCKET } = process.env;
+const { AWS_BUCKET, IMPORT_LIMIT } = process.env;
 
 module.exports = ({ env }) => [
   'strapi::errors',
-  'strapi::security',
   {
     name: 'strapi::security',
     config: {
@@ -27,7 +26,12 @@ module.exports = ({ env }) => [
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
-  'strapi::body',
+  {
+    name: 'strapi::body',
+    config: {
+      jsonLimit: IMPORT_LIMIT,
+    }
+  },
   'strapi::favicon',
   'strapi::public',
   'strapi::session',
