@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mixpanel_distinct_ids",
+  "info": {
+    "singularName": "mixpanel-distinct-id",
+    "pluralName": "mixpanel-distinct-ids",
+    "displayName": "Mixpanel Distinct id",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "distinctId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
