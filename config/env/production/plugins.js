@@ -16,7 +16,6 @@ module.exports = ({ env }) => ({
         params: {
           Bucket: env('AWS_BUCKET', AWS_BUCKET),
         },
-        logger: console
       },
       actionOptions: {
         upload: {
