@@ -32,6 +32,11 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "position": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
     }
   }
 }
