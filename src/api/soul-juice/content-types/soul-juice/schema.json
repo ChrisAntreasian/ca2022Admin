@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "soul_juices",
+  "info": {
+    "singularName": "soul-juice",
+    "pluralName": "soul-juices",
+    "displayName": "Soul Juice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "position": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    }
+  }
+}
