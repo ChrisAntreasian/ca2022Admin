@@ -16,6 +16,7 @@
     "@strapi/strapi": "4.3.4",
     "@vscode/sqlite3": "5.0.8",
     "better-sqlite3": "7.4.6",
+    "node": "^16.16.0",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
     "strapi-plugin-import-export-entries": "^1.12.0"
@@ -27,8 +28,8 @@
     "uuid": "1a17f4c5-7fbe-4470-aea3-9447f92343fd"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
-    "npm": ">=6.0.0"
+    "node": "^18",
+    "npm": "8.x"
   },
   "license": "MIT"
 }
