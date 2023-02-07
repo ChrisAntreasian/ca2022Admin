@@ -34,7 +34,7 @@
       "default": false
     },
     "position": {
-      "type": "biginteger",
+      "type": "integer",
       "required": true,
       "unique": true
     }
