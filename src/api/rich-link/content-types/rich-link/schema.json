@@ -14,8 +14,8 @@
   "attributes": {
     "image": {
       "type": "media",
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -32,6 +32,18 @@
     },
     "body": {
       "type": "richtext"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "secondLink": {
+      "type": "string",
+      "regex": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)"
     }
   }
 }
